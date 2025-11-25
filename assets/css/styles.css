@@ -36,6 +36,24 @@ h1, h2 {
     background-color: #dbdcde; /* light grey */
 }
 
+/* Portfolio Card Titles targeted only, targeting just card-title class 
+will affect any card titles introduced later on */
+
+#portfolio .card-title {
+    color: #1f7798; /* mid-blue */  
+    /* Override bootstrap H3 font size for card titles */
+    font-size: 1.2rem;
+}
+
+#portfolio .btn-outline-secondary:hover { 
+    background-color: #1f7798; /* mid-blue */
+}
+
+#portfolio .card-text {
+    min-height: 120px; /* ensure consistent height for card text */
+}
+
+
 /* Contact Section */
 
 #contact {
