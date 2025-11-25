@@ -28,6 +28,18 @@ h1, h2 {
     border-radius: 0; /* override bootstrap rounded corners */
 }
 
+/* Buttons */
+
+.custom-button {
+    background-color: #1f7798;
+    border: #1f7798
+}
+
+.custom-button:hover {
+    background-color: #1d6d8a;
+    border: #1d6d8a
+}
+
 /* About Section */
 
 #about {
@@ -74,6 +86,9 @@ will affect any card titles introduced later on */
     min-height: 500px;
     padding: 5% 7%;
 }
+
+
+
 
 /* Media queries for responsiveness */
 
