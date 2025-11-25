@@ -65,9 +65,14 @@ integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
             </p>
             <!-- mb-5 gives extra margin spacing under lead text -->
             <p class="lead mb-5">Let's create something amazing together!</p>
-        </div>
-    </section>
+
+  <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Subscribe to my newsletter!
+    </button>
+  
 </header>
+
 
 <!-- main content -->
 <main>
@@ -167,7 +172,7 @@ integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
 </div>
 </div>
     </section>
-
+</main>
 <!--  Contact section starts here -->
 
 <footer id="contact" class="container">
@@ -183,17 +188,70 @@ integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
 
 <!-- Responsive contact form -->
 <div class="col-12 col-md-10 col-lg-8">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eligendi ipsam voluptatibus 
-sed facilis voluptate qui enim, soluta, perspiciatis quam dolores molestias tempore cumque ab 
-inventore eaque delectus explicabo nisi!
+<!-- Form starts here-->
+
+<form class="row g-3">
+  <div class="col-12 col-lg-4">
+    <label for="full_name" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="full_name">
+  </div>
+  <div class="col-12 col-lg-4">
+    <label for="phonenumber" class="form-label">Phone Number</label>
+    <input type="tel" class="form-control" id="phonenumber">
+  </div>
+  <div class="col-12 col-lg-4">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+  </div>
+
+  <div class="col-12">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" rows="3"></textarea>
+  </div>
+  
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Send</button>
+  </div>
+</form>
+
 </div>
   </div>
 </footer>
 
-
-
-</main>
-
+    <!-- Bootstrap modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Subscribe</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Join my newsletter for the latest updates on my projects,
+                        coding tips, and industry insights delivered straight to your
+                        inbox.
+                    </p>
+                    <form class="row g-3">
+                        <div class="col-lg-6">
+                            <label for="inputName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inputName">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="col-12 mb-4">
+                            <button type="submit" class="btn btn-primary">
+                                Sign up!
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <!-- Bootstrap JS Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
