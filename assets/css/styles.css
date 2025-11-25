@@ -41,3 +41,14 @@ h1, h2 {
 #contact {
     background-color: white;
 }
+
+/*header */
+
+#hero {
+    background-color: #dbdcde; /* light grey */
+    background-image: url("../images/background.webp");
+    background-size: cover;
+    background-position: 50% 70%;
+    min-height: 500px;
+    padding: 5% 7%;
+}
